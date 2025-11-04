@@ -1,327 +1,457 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Obras e Exposições - Museu Municipal de Jaú</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/responsive.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="/Aula-Guto---Web-Site-Museu/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="/Aula-Guto---Web-Site-Museu/css/responsive.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <!-- Navbar -->
     <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <span>Museu de Jaú</span>
-            </div>
-            <div class="nav-menu">
-                <a href="/Aula-Guto---Web-Site-Museu/index.html" class="nav-link">Início</a>
-                <a href="sobre.html" class="nav-link">Sobre</a>
-                <a href="obras.html" class="nav-link active">Obras</a>
-                <a href="agendamento.html" class="nav-link">Agendamento</a>
-                <a href="contato.html" class="nav-link">Contato</a>
-            </div>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+      <div class="nav-container">
+        <div class="nav-logo">
+          <span>Museu de Jaú</span>
         </div>
+        <div class="nav-menu">
+          <a href="/Aula-Guto---Web-Site-Museu/index.html" class="nav-link"
+            >Início</a
+          >
+          <a href="sobre.html" class="nav-link">Sobre</a>
+          <a href="obras.html" class="nav-link active">Obras</a>
+          <a href="agendamento.html" class="nav-link">Agendamento</a>
+          <a href="contato.html" class="nav-link">Contato</a>
+        </div>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
     </nav>
 
     <!-- Hero Section -->
     <section class="page-hero">
-        <div class="hero-background" style="background-image: url(/img/encontro.jpeg);"></div>
-        <div class="hero-content">
-            <h1>Obras e Exposições</h1>
-            <p>Explore nosso rico acervo histórico e cultural</p>
-        </div>
+      <div
+        class="hero-background"
+        style="background-image: url(/img/encontro.jpeg)"
+      ></div>
+      <div class="hero-content">
+        <h1>Obras e Exposições</h1>
+        <p>Explore nosso rico acervo histórico e cultural</p>
+      </div>
     </section>
 
     <!-- Conteúdo Principal -->
     <main class="page-content">
-        <div class="container">
-            <!-- Filtros -->
-            <section class="filter-section fade-in">
-                <h2>Filtrar por Categoria</h2>
-                <div class="filter-buttons">
-                    <button class="filter-btn active" data-filter="all">Todas</button>
-                    <button class="filter-btn" data-filter="fotografias">Fotografias</button>
-                    <button class="filter-btn" data-filter="objetos">Objetos</button>
-                    <button class="filter-btn" data-filter="documentos">Documentos</button>
-                    <button class="filter-btn" data-filter="arte">Arte</button>
+      <div class="container">
+        <!-- Filtros -->
+        <section class="filter-section fade-in">
+          <h2>Filtrar por Categoria</h2>
+          <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">Todas</button>
+            <button class="filter-btn" data-filter="fotografias">
+              Fotografias
+            </button>
+            <button class="filter-btn" data-filter="objetos">Objetos</button>
+            <button class="filter-btn" data-filter="documentos">
+              Documentos
+            </button>
+            <button class="filter-btn" data-filter="arte">Arte</button>
+          </div>
+        </section>
+
+        <!-- Galeria de Obras -->
+        <section class="gallery-section fade-in">
+          <div class="gallery-grid" id="gallery">
+            <!-- Fotografias -->
+            <div class="gallery-item" data-category="fotografias">
+              <div class="item-image">
+                <img
+                  src="https://images.pexels.com/photos/1181319/pexels-photo-1181319.jpeg?auto=compress&cs=tinysrgb&w=600"
+                  alt="Estação Ferroviária de Jaú - 1920"
+                />
+                <div class="item-overlay">
+                  <button class="view-btn" onclick="openModal('modal1')">
+                    Ver Detalhes
+                  </button>
                 </div>
-            </section>
+              </div>
+              <div class="item-info">
+                <h3>Estação Ferroviária de Jaú</h3>
+                <p class="item-date">Circa 1920</p>
+                <p class="item-category">Fotografia</p>
+              </div>
+            </div>
 
-            <!-- Galeria de Obras -->
-            <section class="gallery-section fade-in">
-                <div class="gallery-grid" id="gallery">
-                    <!-- Fotografias -->
-                    <div class="gallery-item" data-category="fotografias">
-                        <div class="item-image">
-                            <img src="https://images.pexels.com/photos/1181319/pexels-photo-1181319.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Estação Ferroviária de Jaú - 1920" />
-                            <div class="item-overlay">
-                                <button class="view-btn" onclick="openModal('modal1')">Ver Detalhes</button>
-                            </div>
-                        </div>
-                        <div class="item-info">
-                            <h3>Estação Ferroviária de Jaú</h3>
-                            <p class="item-date">Circa 1920</p>
-                            <p class="item-category">Fotografia</p>
-                        </div>
-                    </div>
-
-                    <div class="gallery-item" data-category="fotografias">
-                        <div class="item-image">
-                            <img src="https://images.pexels.com/photos/1181275/pexels-photo-1181275.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Praça Central - 1950" />
-                            <div class="item-overlay">
-                                <button class="view-btn" onclick="openModal('modal2')">Ver Detalhes</button>
-                            </div>
-                        </div>
-                        <div class="item-info">
-                            <h3>Praça Central</h3>
-                            <p class="item-date">1950</p>
-                            <p class="item-category">Fotografia</p>
-                        </div>
-                    </div>
-
-                    <!-- Objetos -->
-                    <div class="gallery-item" data-category="objetos">
-                        <div class="item-image">
-                            <img src="https://images.pexels.com/photos/1181533/pexels-photo-1181533.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Máquina de Café Antiga" />
-                            <div class="item-overlay">
-                                <button class="view-btn" onclick="openModal('modal3')">Ver Detalhes</button>
-                            </div>
-                        </div>
-                        <div class="item-info">
-                            <h3>Máquina de Beneficiamento de Café</h3>
-                            <p class="item-date">1890</p>
-                            <p class="item-category">Objeto</p>
-                        </div>
-                    </div>
-
-                    <div class="gallery-item" data-category="objetos">
-                        <div class="item-image">
-                            <img src="https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Mobiliário Colonial" />
-                            <div class="item-overlay">
-                                <button class="view-btn" onclick="openModal('modal4')">Ver Detalhes</button>
-                            </div>
-                        </div>
-                        <div class="item-info">
-                            <h3>Mobiliário Colonial</h3>
-                            <p class="item-date">1850-1900</p>
-                            <p class="item-category">Objeto</p>
-                        </div>
-                    </div>
-
-                    <!-- Documentos -->
-                    <div class="gallery-item" data-category="documentos">
-                        <div class="item-image">
-                            <img src="https://images.pexels.com/photos/1181772/pexels-photo-1181772.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Documento de Fundação" />
-                            <div class="item-overlay">
-                                <button class="view-btn" onclick="openModal('modal5')">Ver Detalhes</button>
-                            </div>
-                        </div>
-                        <div class="item-info">
-                            <h3>Documento de Fundação da Cidade</h3>
-                            <p class="item-date">1853</p>
-                            <p class="item-category">Documento</p>
-                        </div>
-                    </div>
-
-                    <div class="gallery-item" data-category="documentos">
-                        <div class="item-image">
-                            <img src="https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Jornal Local Histórico" />
-                            <div class="item-overlay">
-                                <button class="view-btn" onclick="openModal('modal6')">Ver Detalhes</button>
-                            </div>
-                        </div>
-                        <div class="item-info">
-                            <h3>Primeira Edição do Jornal Local</h3>
-                            <p class="item-date">1895</p>
-                            <p class="item-category">Documento</p>
-                        </div>
-                    </div>
-
-                    <!-- Arte -->
-                    <div class="gallery-item" data-category="arte">
-                        <div class="item-image">
-                            <img src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Pintura Local" />
-                            <div class="item-overlay">
-                                <button class="view-btn" onclick="openModal('modal7')">Ver Detalhes</button>
-                            </div>
-                        </div>
-                        <div class="item-info">
-                            <h3>Paisagem de Jaú</h3>
-                            <p class="item-date">1925</p>
-                            <p class="item-category">Arte</p>
-                        </div>
-                    </div>
-
-                    <div class="gallery-item" data-category="arte">
-                        <div class="item-image">
-                            <img src="https://images.pexels.com/photos/1181677/pexels-photo-1181677.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Escultura em Madeira" />
-                            <div class="item-overlay">
-                                <button class="view-btn" onclick="openModal('modal8')">Ver Detalhes</button>
-                            </div>
-                        </div>
-                        <div class="item-info">
-                            <h3>Escultura em Madeira</h3>
-                            <p class="item-date">1910</p>
-                            <p class="item-category">Arte</p>
-                        </div>
-                    </div>
+            <div class="gallery-item" data-category="fotografias">
+              <div class="item-image">
+                <img
+                  src="https://images.pexels.com/photos/1181275/pexels-photo-1181275.jpeg?auto=compress&cs=tinysrgb&w=600"
+                  alt="Praça Central - 1950"
+                />
+                <div class="item-overlay">
+                  <button class="view-btn" onclick="openModal('modal2')">
+                    Ver Detalhes
+                  </button>
                 </div>
-            </section>
-        </div>
+              </div>
+              <div class="item-info">
+                <h3>Praça Central</h3>
+                <p class="item-date">1950</p>
+                <p class="item-category">Fotografia</p>
+              </div>
+            </div>
+
+            <!-- Objetos -->
+            <div class="gallery-item" data-category="objetos">
+              <div class="item-image">
+                <img
+                  src="https://images.pexels.com/photos/1181533/pexels-photo-1181533.jpeg?auto=compress&cs=tinysrgb&w=600"
+                  alt="Máquina de Café Antiga"
+                />
+                <div class="item-overlay">
+                  <button class="view-btn" onclick="openModal('modal3')">
+                    Ver Detalhes
+                  </button>
+                </div>
+              </div>
+              <div class="item-info">
+                <h3>Máquina de Beneficiamento de Café</h3>
+                <p class="item-date">1890</p>
+                <p class="item-category">Objeto</p>
+              </div>
+            </div>
+
+            <div class="gallery-item" data-category="objetos">
+              <div class="item-image">
+                <img
+                  src="https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=600"
+                  alt="Mobiliário Colonial"
+                />
+                <div class="item-overlay">
+                  <button class="view-btn" onclick="openModal('modal4')">
+                    Ver Detalhes
+                  </button>
+                </div>
+              </div>
+              <div class="item-info">
+                <h3>Mobiliário Colonial</h3>
+                <p class="item-date">1850-1900</p>
+                <p class="item-category">Objeto</p>
+              </div>
+            </div>
+
+            <!-- Documentos -->
+            <div class="gallery-item" data-category="documentos">
+              <div class="item-image">
+                <img
+                  src="https://images.pexels.com/photos/1181772/pexels-photo-1181772.jpeg?auto=compress&cs=tinysrgb&w=600"
+                  alt="Documento de Fundação"
+                />
+                <div class="item-overlay">
+                  <button class="view-btn" onclick="openModal('modal5')">
+                    Ver Detalhes
+                  </button>
+                </div>
+              </div>
+              <div class="item-info">
+                <h3>Documento de Fundação da Cidade</h3>
+                <p class="item-date">1853</p>
+                <p class="item-category">Documento</p>
+              </div>
+            </div>
+
+            <div class="gallery-item" data-category="documentos">
+              <div class="item-image">
+                <img
+                  src="https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=600"
+                  alt="Jornal Local Histórico"
+                />
+                <div class="item-overlay">
+                  <button class="view-btn" onclick="openModal('modal6')">
+                    Ver Detalhes
+                  </button>
+                </div>
+              </div>
+              <div class="item-info">
+                <h3>Primeira Edição do Jornal Local</h3>
+                <p class="item-date">1895</p>
+                <p class="item-category">Documento</p>
+              </div>
+            </div>
+
+            <!-- Arte -->
+            <div class="gallery-item" data-category="arte">
+              <div class="item-image">
+                <img
+                  src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=600"
+                  alt="Pintura Local"
+                />
+                <div class="item-overlay">
+                  <button class="view-btn" onclick="openModal('modal7')">
+                    Ver Detalhes
+                  </button>
+                </div>
+              </div>
+              <div class="item-info">
+                <h3>Paisagem de Jaú</h3>
+                <p class="item-date">1925</p>
+                <p class="item-category">Arte</p>
+              </div>
+            </div>
+
+            <div class="gallery-item" data-category="arte">
+              <div class="item-image">
+                <img
+                  src="https://images.pexels.com/photos/1181677/pexels-photo-1181677.jpeg?auto=compress&cs=tinysrgb&w=600"
+                  alt="Escultura em Madeira"
+                />
+                <div class="item-overlay">
+                  <button class="view-btn" onclick="openModal('modal8')">
+                    Ver Detalhes
+                  </button>
+                </div>
+              </div>
+              <div class="item-info">
+                <h3>Escultura em Madeira</h3>
+                <p class="item-date">1910</p>
+                <p class="item-category">Arte</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
 
     <!-- Modais -->
     <div id="modal1" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <img src="https://images.pexels.com/photos/1181319/pexels-photo-1181319.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Estação Ferroviária de Jaú - 1920" />
-            <div class="modal-info">
-                <h2>Estação Ferroviária de Jaú</h2>
-                <p><strong>Data:</strong> Circa 1920</p>
-                <p><strong>Categoria:</strong> Fotografia</p>
-                <p><strong>Descrição:</strong> Esta fotografia histórica captura a estação ferroviária de Jaú em seus primeiros anos de funcionamento. A ferrovia foi fundamental para o desenvolvimento econômico da cidade, especialmente para o transporte de café. A imagem mostra a arquitetura típica das estações da época e a movimentação característica dos tempos áureos do café.</p>
-                <p><strong>Origem:</strong> Doação da família Silva, 1985</p>
-            </div>
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <img
+          src="https://images.pexels.com/photos/1181319/pexels-photo-1181319.jpeg?auto=compress&cs=tinysrgb&w=800"
+          alt="Estação Ferroviária de Jaú - 1920"
+        />
+        <div class="modal-info">
+          <h2>Estação Ferroviária de Jaú</h2>
+          <p><strong>Data:</strong> Circa 1920</p>
+          <p><strong>Categoria:</strong> Fotografia</p>
+          <p>
+            <strong>Descrição:</strong> Esta fotografia histórica captura a
+            estação ferroviária de Jaú em seus primeiros anos de funcionamento.
+            A ferrovia foi fundamental para o desenvolvimento econômico da
+            cidade, especialmente para o transporte de café. A imagem mostra a
+            arquitetura típica das estações da época e a movimentação
+            característica dos tempos áureos do café.
+          </p>
+          <p><strong>Origem:</strong> Doação da família Silva, 1985</p>
         </div>
+      </div>
     </div>
 
     <div id="modal2" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <img src="https://images.pexels.com/photos/1181275/pexels-photo-1181275.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Praça Central - 1950" />
-            <div class="modal-info">
-                <h2>Praça Central</h2>
-                <p><strong>Data:</strong> 1950</p>
-                <p><strong>Categoria:</strong> Fotografia</p>
-                <p><strong>Descrição:</strong> Vista da praça central de Jaú na década de 1950, mostrando o paisagismo da época e os principais edifícios que circundavam o coração da cidade. Esta imagem é um testemunho do crescimento urbano e da vida social jauense no período pós-guerra.</p>
-                <p><strong>Origem:</strong> Arquivo Municipal</p>
-            </div>
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <img
+          src="https://images.pexels.com/photos/1181275/pexels-photo-1181275.jpeg?auto=compress&cs=tinysrgb&w=800"
+          alt="Praça Central - 1950"
+        />
+        <div class="modal-info">
+          <h2>Praça Central</h2>
+          <p><strong>Data:</strong> 1950</p>
+          <p><strong>Categoria:</strong> Fotografia</p>
+          <p>
+            <strong>Descrição:</strong> Vista da praça central de Jaú na década
+            de 1950, mostrando o paisagismo da época e os principais edifícios
+            que circundavam o coração da cidade. Esta imagem é um testemunho do
+            crescimento urbano e da vida social jauense no período pós-guerra.
+          </p>
+          <p><strong>Origem:</strong> Arquivo Municipal</p>
         </div>
+      </div>
     </div>
 
     <div id="modal3" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <img src="https://images.pexels.com/photos/1181533/pexels-photo-1181533.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Máquina de Café Antiga" />
-            <div class="modal-info">
-                <h2>Máquina de Beneficiamento de Café</h2>
-                <p><strong>Data:</strong> 1890</p>
-                <p><strong>Categoria:</strong> Objeto</p>
-                <p><strong>Descrição:</strong> Máquina utilizada para o beneficiamento de grãos de café, representando a importância da cafeicultura na economia local. Este equipamento era fundamental no processo de preparação dos grãos para exportação, contribuindo para a prosperidade de Jaú durante o ciclo do café.</p>
-                <p><strong>Origem:</strong> Fazenda Santa Rita</p>
-            </div>
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <img
+          src="https://images.pexels.com/photos/1181533/pexels-photo-1181533.jpeg?auto=compress&cs=tinysrgb&w=800"
+          alt="Máquina de Café Antiga"
+        />
+        <div class="modal-info">
+          <h2>Máquina de Beneficiamento de Café</h2>
+          <p><strong>Data:</strong> 1890</p>
+          <p><strong>Categoria:</strong> Objeto</p>
+          <p>
+            <strong>Descrição:</strong> Máquina utilizada para o beneficiamento
+            de grãos de café, representando a importância da cafeicultura na
+            economia local. Este equipamento era fundamental no processo de
+            preparação dos grãos para exportação, contribuindo para a
+            prosperidade de Jaú durante o ciclo do café.
+          </p>
+          <p><strong>Origem:</strong> Fazenda Santa Rita</p>
         </div>
+      </div>
     </div>
 
     <div id="modal4" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <img src="https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Mobiliário Colonial" />
-            <div class="modal-info">
-                <h2>Mobiliário Colonial</h2>
-                <p><strong>Data:</strong> 1850-1900</p>
-                <p><strong>Categoria:</strong> Objeto</p>
-                <p><strong>Descrição:</strong> Conjunto de móveis representativo do estilo de vida das famílias abastadas de Jaú no século XIX. As peças refletem a influência européia na decoração e o refinamento das residências da época áurea do café.</p>
-                <p><strong>Origem:</strong> Casa dos Barões do Café</p>
-            </div>
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <img
+          src="https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=800"
+          alt="Mobiliário Colonial"
+        />
+        <div class="modal-info">
+          <h2>Mobiliário Colonial</h2>
+          <p><strong>Data:</strong> 1850-1900</p>
+          <p><strong>Categoria:</strong> Objeto</p>
+          <p>
+            <strong>Descrição:</strong> Conjunto de móveis representativo do
+            estilo de vida das famílias abastadas de Jaú no século XIX. As peças
+            refletem a influência européia na decoração e o refinamento das
+            residências da época áurea do café.
+          </p>
+          <p><strong>Origem:</strong> Casa dos Barões do Café</p>
         </div>
+      </div>
     </div>
 
     <div id="modal5" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <img src="https://images.pexels.com/photos/1181772/pexels-photo-1181772.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Documento de Fundação" />
-            <div class="modal-info">
-                <h2>Documento de Fundação da Cidade</h2>
-                <p><strong>Data:</strong> 1853</p>
-                <p><strong>Categoria:</strong> Documento</p>
-                <p><strong>Descrição:</strong> Documento oficial que marca a fundação de Jaú, assinado pelos primeiros colonizadores e autoridades da época. Este registro histórico é fundamental para compreender as origens da cidade e os primeiros passos de sua organização administrativa.</p>
-                <p><strong>Origem:</strong> Arquivo Público Municipal</p>
-            </div>
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <img
+          src="https://images.pexels.com/photos/1181772/pexels-photo-1181772.jpeg?auto=compress&cs=tinysrgb&w=800"
+          alt="Documento de Fundação"
+        />
+        <div class="modal-info">
+          <h2>Documento de Fundação da Cidade</h2>
+          <p><strong>Data:</strong> 1853</p>
+          <p><strong>Categoria:</strong> Documento</p>
+          <p>
+            <strong>Descrição:</strong> Documento oficial que marca a fundação
+            de Jaú, assinado pelos primeiros colonizadores e autoridades da
+            época. Este registro histórico é fundamental para compreender as
+            origens da cidade e os primeiros passos de sua organização
+            administrativa.
+          </p>
+          <p><strong>Origem:</strong> Arquivo Público Municipal</p>
         </div>
+      </div>
     </div>
 
     <div id="modal6" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <img src="https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Jornal Local Histórico" />
-            <div class="modal-info">
-                <h2>Primeira Edição do Jornal Local</h2>
-                <p><strong>Data:</strong> 1895</p>
-                <p><strong>Categoria:</strong> Documento</p>
-                <p><strong>Descrição:</strong> Primeira edição do jornal "O Jauense", marco na história da comunicação local. O periódico documentava os acontecimentos da cidade e região, sendo uma fonte valiosa de informações sobre a vida cotidiana no final do século XIX.</p>
-                <p><strong>Origem:</strong> Hemeroteca Municipal</p>
-            </div>
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <img
+          src="https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=800"
+          alt="Jornal Local Histórico"
+        />
+        <div class="modal-info">
+          <h2>Primeira Edição do Jornal Local</h2>
+          <p><strong>Data:</strong> 1895</p>
+          <p><strong>Categoria:</strong> Documento</p>
+          <p>
+            <strong>Descrição:</strong> Primeira edição do jornal "O Jauense",
+            marco na história da comunicação local. O periódico documentava os
+            acontecimentos da cidade e região, sendo uma fonte valiosa de
+            informações sobre a vida cotidiana no final do século XIX.
+          </p>
+          <p><strong>Origem:</strong> Hemeroteca Municipal</p>
         </div>
+      </div>
     </div>
 
     <div id="modal7" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <img src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Pintura Local" />
-            <div class="modal-info">
-                <h2>Paisagem de Jaú</h2>
-                <p><strong>Data:</strong> 1925</p>
-                <p><strong>Categoria:</strong> Arte</p>
-                <p><strong>Descrição:</strong> Pintura a óleo retratando a paisagem rural de Jaú, com destaque para as plantações de café e a arquitetura típica das fazendas. A obra captura a essência da região durante o período de maior prosperidade cafeeira.</p>
-                <p><strong>Origem:</strong> Artista local José Mendonça</p>
-            </div>
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <img
+          src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=800"
+          alt="Pintura Local"
+        />
+        <div class="modal-info">
+          <h2>Paisagem de Jaú</h2>
+          <p><strong>Data:</strong> 1925</p>
+          <p><strong>Categoria:</strong> Arte</p>
+          <p>
+            <strong>Descrição:</strong> Pintura a óleo retratando a paisagem
+            rural de Jaú, com destaque para as plantações de café e a
+            arquitetura típica das fazendas. A obra captura a essência da região
+            durante o período de maior prosperidade cafeeira.
+          </p>
+          <p><strong>Origem:</strong> Artista local José Mendonça</p>
         </div>
+      </div>
     </div>
 
     <div id="modal8" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <img src="https://images.pexels.com/photos/1181677/pexels-photo-1181677.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Escultura em Madeira" />
-            <div class="modal-info">
-                <h2>Escultura em Madeira</h2>
-                <p><strong>Data:</strong> 1910</p>
-                <p><strong>Categoria:</strong> Arte</p>
-                <p><strong>Descrição:</strong> Escultura entalhada em madeira nobre, representando figuras importantes da história local. A peça demonstra a habilidade dos artesãos da época e a tradição de trabalhos manuais na região.</p>
-                <p><strong>Origem:</strong> Oficina de Entalhes Santos</p>
-            </div>
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <img
+          src="https://images.pexels.com/photos/1181677/pexels-photo-1181677.jpeg?auto=compress&cs=tinysrgb&w=800"
+          alt="Escultura em Madeira"
+        />
+        <div class="modal-info">
+          <h2>Escultura em Madeira</h2>
+          <p><strong>Data:</strong> 1910</p>
+          <p><strong>Categoria:</strong> Arte</p>
+          <p>
+            <strong>Descrição:</strong> Escultura entalhada em madeira nobre,
+            representando figuras importantes da história local. A peça
+            demonstra a habilidade dos artesãos da época e a tradição de
+            trabalhos manuais na região.
+          </p>
+          <p><strong>Origem:</strong> Oficina de Entalhes Santos</p>
         </div>
+      </div>
     </div>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Museu Municipal de Jaú</h3>
-                    <p>Preservando a história e cultura da nossa cidade para as futuras gerações.</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Navegação</h4>
-                    <ul>
-                        <li><a href="/Aula-Guto---Web-Site-Museu/index.html">Início</a></li>
-                        <li><a href="sobre.html">Sobre</a></li>
-                        <li><a href="obras.html">Obras</a></li>
-                        <li><a href="agendamento.html">Agendamento</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Contato</h4>
-                    <p>Rua XV de Novembro, 123<br>Centro - Jaú/SP</p>
-                    <p>Tel: (14) 3622-1234</p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Museu Municipal de Jaú. Todos os direitos reservados.</p>
-            </div>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Museu Municipal de Jaú</h3>
+            <p>
+              Preservando a história e cultura da nossa cidade para as futuras
+              gerações.
+            </p>
+          </div>
+          <div class="footer-section">
+            <h4>Navegação</h4>
+            <ul>
+              <li>
+                <a href="/Aula-Guto---Web-Site-Museu/index.html">Início</a>
+              </li>
+              <li><a href="sobre.html">Sobre</a></li>
+              <li><a href="obras.html">Obras</a></li>
+              <li><a href="agendamento.html">Agendamento</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Contato</h4>
+            <p>Rua XV de Novembro, 123<br />Centro - Jaú/SP</p>
+            <p>Tel: (14) 3622-1234</p>
+          </div>
         </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; 2024 Museu Municipal de Jaú. Todos os direitos reservados.
+          </p>
+        </div>
+      </div>
     </footer>
 
-    <script src="/js/script.js"></script>
-    <script src="/js/gallery.js"></script>
-</body>
+    <script src="/Aula-Guto---Web-Site-Museu/js/script.js"></script>
+    <script src="/Aula-Guto---Web-Site-Museu/js/gallery.js"></script>
+  </body>
 </html>

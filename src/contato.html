@@ -1,328 +1,474 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contato - Museu Municipal de Jaú</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/responsive.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="/Aula-Guto---Web-Site-Museu/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="/Aula-Guto---Web-Site-Museu/css/responsive.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <!-- Navbar -->
     <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <span>Museu de Jaú</span>
-            </div>
-            <div class="nav-menu">
-                <a href="/Aula-Guto---Web-Site-Museu/index.html" class="nav-link">Início</a>
-                <a href="sobre.html" class="nav-link">Sobre</a>
-                <a href="obras.html" class="nav-link">Obras</a>
-                <a href="agendamento.html" class="nav-link">Agendamento</a>
-                <a href="contato.html" class="nav-link active">Contato</a>
-            </div>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+      <div class="nav-container">
+        <div class="nav-logo">
+          <span>Museu de Jaú</span>
         </div>
+        <div class="nav-menu">
+          <a href="/Aula-Guto---Web-Site-Museu/index.html" class="nav-link"
+            >Início</a
+          >
+          <a href="sobre.html" class="nav-link">Sobre</a>
+          <a href="obras.html" class="nav-link">Obras</a>
+          <a href="agendamento.html" class="nav-link">Agendamento</a>
+          <a href="contato.html" class="nav-link active">Contato</a>
+        </div>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
     </nav>
 
     <!-- Hero Section -->
     <section class="page-hero">
-        <div class="hero-background" style="background-image: url('https://images.pexels.com/photos/1181533/pexels-photo-1181533.jpeg?auto=compress&cs=tinysrgb&w=1200');"></div>
-        <div class="hero-content">
-            <h1>Entre em Contato</h1>
-            <p>Estamos aqui para ajudar e esclarecer suas dúvidas</p>
-        </div>
+      <div
+        class="hero-background"
+        style="
+          background-image: url('https://images.pexels.com/photos/1181533/pexels-photo-1181533.jpeg?auto=compress&cs=tinysrgb&w=1200');
+        "
+      ></div>
+      <div class="hero-content">
+        <h1>Entre em Contato</h1>
+        <p>Estamos aqui para ajudar e esclarecer suas dúvidas</p>
+      </div>
     </section>
 
     <!-- Conteúdo Principal -->
     <main class="page-content">
-        <div class="container">
-            <!-- Informações de Contato -->
-            <section class="contact-info fade-in">
-                <div class="section-header">
-                    <h2>Informações de Contato</h2>
+      <div class="container">
+        <!-- Informações de Contato -->
+        <section class="contact-info fade-in">
+          <div class="section-header">
+            <h2>Informações de Contato</h2>
+          </div>
+          <div class="contact-grid">
+            <div class="contact-card">
+              <div class="contact-icon">
+                <svg
+                  width="40"
+                  height="40"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+              </div>
+              <h3>Endereço</h3>
+              <p>
+                Rua XV de Novembro, 123<br />Centro - Jaú/SP<br />CEP: 17201-000
+              </p>
+              <a
+                href="https://maps.google.com/?q=Rua+XV+de+Novembro+123+Jau+SP"
+                target="_blank"
+                class="link"
+                >Ver no Google Maps</a
+              >
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon">
+                <svg
+                  width="40"
+                  height="40"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                  />
+                </svg>
+              </div>
+              <h3>Telefones</h3>
+              <p><strong>Principal:</strong> (14) 3622-1234</p>
+              <p><strong>Agendamentos:</strong> (14) 3622-1235</p>
+              <p><strong>WhatsApp:</strong> (14) 99999-1234</p>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon">
+                <svg
+                  width="40"
+                  height="40"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                  />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+              </div>
+              <h3>E-mails</h3>
+              <p><strong>Geral:</strong> contato@museujau.gov.br</p>
+              <p><strong>Educativo:</strong> educativo@museujau.gov.br</p>
+              <p><strong>Pesquisa:</strong> pesquisa@museujau.gov.br</p>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon">
+                <svg
+                  width="40"
+                  height="40"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <circle cx="12" cy="12" r="10" />
+                  <polyline points="12,6 12,12 16,14" />
+                </svg>
+              </div>
+              <h3>Horário de Funcionamento</h3>
+              <p><strong>Terça a Sexta:</strong> 9h às 17h</p>
+              <p><strong>Sábados e Domingos:</strong> 9h às 16h</p>
+              <p><strong>Fechado:</strong> Segundas-feiras</p>
+              <p class="note">Última entrada 30min antes do fechamento</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Mapa -->
+        <section class="map-section fade-in">
+          <div class="section-header">
+            <h2>Nossa Localização</h2>
+            <p>Venha nos visitar no coração do centro histórico de Jaú</p>
+          </div>
+          <div class="map-container">
+            <div class="map-placeholder">
+              <div class="map-content">
+                <div class="map-icon">
+                  <svg
+                    width="60"
+                    height="60"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                    <circle cx="12" cy="10" r="3" />
+                  </svg>
                 </div>
-                <div class="contact-grid">
-                    <div class="contact-card">
-                        <div class="contact-icon">
-                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-                                <circle cx="12" cy="10" r="3"/>
-                            </svg>
-                        </div>
-                        <h3>Endereço</h3>
-                        <p>Rua XV de Novembro, 123<br>Centro - Jaú/SP<br>CEP: 17201-000</p>
-                        <a href="https://maps.google.com/?q=Rua+XV+de+Novembro+123+Jau+SP" target="_blank" class="link">Ver no Google Maps</a>
-                    </div>
-
-                    <div class="contact-card">
-                        <div class="contact-icon">
-                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-                            </svg>
-                        </div>
-                        <h3>Telefones</h3>
-                        <p><strong>Principal:</strong> (14) 3622-1234</p>
-                        <p><strong>Agendamentos:</strong> (14) 3622-1235</p>
-                        <p><strong>WhatsApp:</strong> (14) 99999-1234</p>
-                    </div>
-
-                    <div class="contact-card">
-                        <div class="contact-icon">
-                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                                <polyline points="22,6 12,13 2,6"/>
-                            </svg>
-                        </div>
-                        <h3>E-mails</h3>
-                        <p><strong>Geral:</strong> contato@museujau.gov.br</p>
-                        <p><strong>Educativo:</strong> educativo@museujau.gov.br</p>
-                        <p><strong>Pesquisa:</strong> pesquisa@museujau.gov.br</p>
-                    </div>
-
-                    <div class="contact-card">
-                        <div class="contact-icon">
-                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <circle cx="12" cy="12" r="10"/>
-                                <polyline points="12,6 12,12 16,14"/>
-                            </svg>
-                        </div>
-                        <h3>Horário de Funcionamento</h3>
-                        <p><strong>Terça a Sexta:</strong> 9h às 17h</p>
-                        <p><strong>Sábados e Domingos:</strong> 9h às 16h</p>
-                        <p><strong>Fechado:</strong> Segundas-feiras</p>
-                        <p class="note">Última entrada 30min antes do fechamento</p>
-                    </div>
+                <h3>Museu Municipal de Jaú</h3>
+                <p>Rua XV de Novembro, 123 - Centro</p>
+                <a
+                  href="https://maps.google.com/?q=Rua+XV+de+Novembro+123+Jau+SP"
+                  target="_blank"
+                  class="btn btn-primary"
+                  >Abrir no Google Maps</a
+                >
+              </div>
+            </div>
+            <div class="location-info">
+              <h3>Como Chegar</h3>
+              <div class="transport-options">
+                <div class="transport-item">
+                  <div class="transport-icon">
+                    <svg
+                      width="30"
+                      height="30"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                      <line x1="8" y1="21" x2="16" y2="21" />
+                      <line x1="12" y1="17" x2="12" y2="21" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h4>Transporte Público</h4>
+                    <p>Linhas 101, 102 e 105 - Ponto: Centro</p>
+                  </div>
                 </div>
-            </section>
-
-            <!-- Mapa -->
-            <section class="map-section fade-in">
-                <div class="section-header">
-                    <h2>Nossa Localização</h2>
-                    <p>Venha nos visitar no coração do centro histórico de Jaú</p>
+                <div class="transport-item">
+                  <div class="transport-icon">
+                    <svg
+                      width="30"
+                      height="30"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9L18 10V6c0-2-2-4-4-4H4c-2 0-4 2-4 4v10c0 .6.4 1 1 1h2"
+                      />
+                      <circle cx="7" cy="17" r="2" />
+                      <path d="M9 17h6" />
+                      <circle cx="17" cy="17" r="2" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h4>Carro</h4>
+                    <p>
+                      Estacionamento gratuito na rua<br />Zona azul disponível
+                    </p>
+                  </div>
                 </div>
-                <div class="map-container">
-                    <div class="map-placeholder">
-                        <div class="map-content">
-                            <div class="map-icon">
-                                <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-                                    <circle cx="12" cy="10" r="3"/>
-                                </svg>
-                            </div>
-                            <h3>Museu Municipal de Jaú</h3>
-                            <p>Rua XV de Novembro, 123 - Centro</p>
-                            <a href="https://maps.google.com/?q=Rua+XV+de+Novembro+123+Jau+SP" target="_blank" class="btn btn-primary">Abrir no Google Maps</a>
-                        </div>
-                    </div>
-                    <div class="location-info">
-                        <h3>Como Chegar</h3>
-                        <div class="transport-options">
-                            <div class="transport-item">
-                                <div class="transport-icon">
-                                    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
-                                        <line x1="8" y1="21" x2="16" y2="21"/>
-                                        <line x1="12" y1="17" x2="12" y2="21"/>
-                                    </svg>
-                                </div>
-                                <div>
-                                    <h4>Transporte Público</h4>
-                                    <p>Linhas 101, 102 e 105 - Ponto: Centro</p>
-                                </div>
-                            </div>
-                            <div class="transport-item">
-                                <div class="transport-icon">
-                                    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9L18 10V6c0-2-2-4-4-4H4c-2 0-4 2-4 4v10c0 .6.4 1 1 1h2"/>
-                                        <circle cx="7" cy="17" r="2"/>
-                                        <path d="M9 17h6"/>
-                                        <circle cx="17" cy="17" r="2"/>
-                                    </svg>
-                                </div>
-                                <div>
-                                    <h4>Carro</h4>
-                                    <p>Estacionamento gratuito na rua<br>Zona azul disponível</p>
-                                </div>
-                            </div>
-                            <div class="transport-item">
-                                <div class="transport-icon">
-                                    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-                                        <circle cx="9" cy="7" r="4"/>
-                                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-                                        <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-                                    </svg>
-                                </div>
-                                <div>
-                                    <h4>A Pé</h4>
-                                    <p>Centro histórico acessível<br>Calçadas adaptadas</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="transport-item">
+                  <div class="transport-icon">
+                    <svg
+                      width="30"
+                      height="30"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                      <circle cx="9" cy="7" r="4" />
+                      <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                      <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h4>A Pé</h4>
+                    <p>Centro histórico acessível<br />Calçadas adaptadas</p>
+                  </div>
                 </div>
-            </section>
+              </div>
+            </div>
+          </div>
+        </section>
 
-            <!-- Formulário de Contato -->
-            <section class="contact-form-section fade-in">
-                <div class="section-header">
-                    <h2>Envie sua Mensagem</h2>
-                    <p>Tem alguma dúvida ou sugestão? Entre em contato conosco</p>
-                </div>
-                
-                <form id="contactForm" class="contact-form">
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="contact-name">Nome Completo *</label>
-                            <input type="text" id="contact-name" name="name" required>
-                            <span class="error-message"></span>
-                        </div>
-                        <div class="form-group">
-                            <label for="contact-email">E-mail *</label>
-                            <input type="email" id="contact-email" name="email" required>
-                            <span class="error-message"></span>
-                        </div>
-                    </div>
+        <!-- Formulário de Contato -->
+        <section class="contact-form-section fade-in">
+          <div class="section-header">
+            <h2>Envie sua Mensagem</h2>
+            <p>Tem alguma dúvida ou sugestão? Entre em contato conosco</p>
+          </div>
 
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="contact-phone">Telefone</label>
-                            <input type="tel" id="contact-phone" name="phone">
-                        </div>
-                        <div class="form-group">
-                            <label for="contact-subject">Assunto *</label>
-                            <select id="contact-subject" name="subject" required>
-                                <option value="">Selecione um assunto</option>
-                                <option value="informacoes">Informações Gerais</option>
-                                <option value="agendamento">Agendamento de Visita</option>
-                                <option value="pesquisa">Pesquisa Histórica</option>
-                                <option value="educativo">Programa Educativo</option>
-                                <option value="doacao">Doação de Acervo</option>
-                                <option value="parcerias">Parcerias</option>
-                                <option value="imprensa">Imprensa</option>
-                                <option value="sugestoes">Sugestões</option>
-                                <option value="outro">Outro</option>
-                            </select>
-                            <span class="error-message"></span>
-                        </div>
-                    </div>
+          <form id="contactForm" class="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contact-name">Nome Completo *</label>
+                <input type="text" id="contact-name" name="name" required />
+                <span class="error-message"></span>
+              </div>
+              <div class="form-group">
+                <label for="contact-email">E-mail *</label>
+                <input type="email" id="contact-email" name="email" required />
+                <span class="error-message"></span>
+              </div>
+            </div>
 
-                    <div class="form-group">
-                        <label for="contact-message">Mensagem *</label>
-                        <textarea id="contact-message" name="message" rows="6" required placeholder="Digite sua mensagem aqui..."></textarea>
-                        <span class="error-message"></span>
-                    </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contact-phone">Telefone</label>
+                <input type="tel" id="contact-phone" name="phone" />
+              </div>
+              <div class="form-group">
+                <label for="contact-subject">Assunto *</label>
+                <select id="contact-subject" name="subject" required>
+                  <option value="">Selecione um assunto</option>
+                  <option value="informacoes">Informações Gerais</option>
+                  <option value="agendamento">Agendamento de Visita</option>
+                  <option value="pesquisa">Pesquisa Histórica</option>
+                  <option value="educativo">Programa Educativo</option>
+                  <option value="doacao">Doação de Acervo</option>
+                  <option value="parcerias">Parcerias</option>
+                  <option value="imprensa">Imprensa</option>
+                  <option value="sugestoes">Sugestões</option>
+                  <option value="outro">Outro</option>
+                </select>
+                <span class="error-message"></span>
+              </div>
+            </div>
 
-                    <div class="form-group checkbox-group">
-                        <label class="checkbox-label">
-                            <input type="checkbox" id="contact-privacy" name="privacy" required>
-                            <span class="checkbox-custom"></span>
-                            Concordo com o tratamento dos meus dados pessoais conforme a <a href="#" class="link">Política de Privacidade</a> *
-                        </label>
-                        <span class="error-message"></span>
-                    </div>
+            <div class="form-group">
+              <label for="contact-message">Mensagem *</label>
+              <textarea
+                id="contact-message"
+                name="message"
+                rows="6"
+                required
+                placeholder="Digite sua mensagem aqui..."
+              ></textarea>
+              <span class="error-message"></span>
+            </div>
 
-                    <div class="form-actions">
-                        <button type="submit" class="btn btn-primary">
-                            <span class="btn-text">Enviar Mensagem</span>
-                            <span class="btn-loading" style="display: none;">Enviando...</span>
-                        </button>
-                        <button type="reset" class="btn btn-secondary">Limpar</button>
-                    </div>
-                </form>
-            </section>
+            <div class="form-group checkbox-group">
+              <label class="checkbox-label">
+                <input
+                  type="checkbox"
+                  id="contact-privacy"
+                  name="privacy"
+                  required
+                />
+                <span class="checkbox-custom"></span>
+                Concordo com o tratamento dos meus dados pessoais conforme a
+                <a href="#" class="link">Política de Privacidade</a> *
+              </label>
+              <span class="error-message"></span>
+            </div>
 
-            <!-- Redes Sociais -->
-            <section class="social-section fade-in">
-                <div class="section-header">
-                    <h2>Siga-nos nas Redes Sociais</h2>
-                    <p>Fique por dentro das novidades e eventos do museu</p>
-                </div>
-                <div class="social-links">
-                    <a href="#" class="social-link facebook">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-                        </svg>
-                        <span>Facebook</span>
-                    </a>
-                    <a href="#" class="social-link instagram">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                        </svg>
-                        <span>Instagram</span>
-                    </a>
-                    <a href="#" class="social-link youtube">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
-                        </svg>
-                        <span>YouTube</span>
-                    </a>
-                </div>
-            </section>
-        </div>
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary">
+                <span class="btn-text">Enviar Mensagem</span>
+                <span class="btn-loading" style="display: none"
+                  >Enviando...</span
+                >
+              </button>
+              <button type="reset" class="btn btn-secondary">Limpar</button>
+            </div>
+          </form>
+        </section>
+
+        <!-- Redes Sociais -->
+        <section class="social-section fade-in">
+          <div class="section-header">
+            <h2>Siga-nos nas Redes Sociais</h2>
+            <p>Fique por dentro das novidades e eventos do museu</p>
+          </div>
+          <div class="social-links">
+            <a href="#" class="social-link facebook">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                />
+              </svg>
+              <span>Facebook</span>
+            </a>
+            <a href="#" class="social-link instagram">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                />
+              </svg>
+              <span>Instagram</span>
+            </a>
+            <a href="#" class="social-link youtube">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+                />
+              </svg>
+              <span>YouTube</span>
+            </a>
+          </div>
+        </section>
+      </div>
     </main>
 
     <!-- Modal de Confirmação -->
     <div id="contactConfirmationModal" class="modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <div class="success-icon">
-                    <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <circle cx="12" cy="12" r="10"/>
-                        <polyline points="16,8 12,12 8,16"/>
-                    </svg>
-                </div>
-                <h2>Mensagem Enviada!</h2>
-            </div>
-            <div class="modal-body">
-                <p>Sua mensagem foi enviada com sucesso. Entraremos em contato em breve.</p>
-                <p>Tempo médio de resposta: <strong>24 horas</strong></p>
-            </div>
-            <div class="modal-footer">
-                <button class="btn btn-primary" onclick="closeModal('contactConfirmationModal')">Fechar</button>
-            </div>
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="success-icon">
+            <svg
+              width="60"
+              height="60"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <circle cx="12" cy="12" r="10" />
+              <polyline points="16,8 12,12 8,16" />
+            </svg>
+          </div>
+          <h2>Mensagem Enviada!</h2>
         </div>
+        <div class="modal-body">
+          <p>
+            Sua mensagem foi enviada com sucesso. Entraremos em contato em
+            breve.
+          </p>
+          <p>Tempo médio de resposta: <strong>24 horas</strong></p>
+        </div>
+        <div class="modal-footer">
+          <button
+            class="btn btn-primary"
+            onclick="closeModal('contactConfirmationModal')"
+          >
+            Fechar
+          </button>
+        </div>
+      </div>
     </div>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Museu Municipal de Jaú</h3>
-                    <p>Preservando a história e cultura da nossa cidade para as futuras gerações.</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Navegação</h4>
-                    <ul>
-                        <li><a href="/Aula-Guto---Web-Site-Museu/index.html">Início</a></li>
-                        <li><a href="sobre.html">Sobre</a></li>
-                        <li><a href="obras.html">Obras</a></li>
-                        <li><a href="agendamento.html">Agendamento</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Contato</h4>
-                    <p>Rua XV de Novembro, 123<br>Centro - Jaú/SP</p>
-                    <p>Tel: (14) 3622-1234</p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Museu Municipal de Jaú. Todos os direitos reservados.</p>
-            </div>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Museu Municipal de Jaú</h3>
+            <p>
+              Preservando a história e cultura da nossa cidade para as futuras
+              gerações.
+            </p>
+          </div>
+          <div class="footer-section">
+            <h4>Navegação</h4>
+            <ul>
+              <li>
+                <a href="/Aula-Guto---Web-Site-Museu/index.html">Início</a>
+              </li>
+              <li><a href="sobre.html">Sobre</a></li>
+              <li><a href="obras.html">Obras</a></li>
+              <li><a href="agendamento.html">Agendamento</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Contato</h4>
+            <p>Rua XV de Novembro, 123<br />Centro - Jaú/SP</p>
+            <p>Tel: (14) 3622-1234</p>
+          </div>
         </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; 2024 Museu Municipal de Jaú. Todos os direitos reservados.
+          </p>
+        </div>
+      </div>
     </footer>
 
-    <script src="/js/script.js"></script>
-    <script src="/js/contact.js"></script>
-</body>
+    <script src="/Aula-Guto---Web-Site-Museu/js/script.js"></script>
+    <script src="/Aula-Guto---Web-Site-Museu/js/contact.js"></script>
+  </body>
 </html>

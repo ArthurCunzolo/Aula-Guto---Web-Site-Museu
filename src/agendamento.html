@@ -1,312 +1,389 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Agendamento - Museu Municipal de Jaú</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/responsive.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="/Aula-Guto---Web-Site-Museu/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="/Aula-Guto---Web-Site-Museu/css/responsive.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <!-- Navbar -->
     <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <span>Museu de Jaú</span>
-            </div>
-            <div class="nav-menu">
-                <a href="/Aula-Guto---Web-Site-Museu/index.html" class="nav-link">Início</a>
-                <a href="sobre.html" class="nav-link">Sobre</a>
-                <a href="obras.html" class="nav-link">Obras</a>
-                <a href="agendamento.html" class="nav-link active">Agendamento</a>
-                <a href="contato.html" class="nav-link">Contato</a>
-            </div>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+      <div class="nav-container">
+        <div class="nav-logo">
+          <span>Museu de Jaú</span>
         </div>
+        <div class="nav-menu">
+          <a href="/Aula-Guto---Web-Site-Museu/index.html" class="nav-link"
+            >Início</a
+          >
+          <a href="sobre.html" class="nav-link">Sobre</a>
+          <a href="obras.html" class="nav-link">Obras</a>
+          <a href="agendamento.html" class="nav-link active">Agendamento</a>
+          <a href="contato.html" class="nav-link">Contato</a>
+        </div>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
     </nav>
 
     <!-- Hero Section -->
     <section class="page-hero">
-        <div class="hero-background" style="background-image: url('https://images.pexels.com/photos/1181533/pexels-photo-1181533.jpeg?auto=compress&cs=tinysrgb&w=1200');"></div>
-        <div class="hero-content">
-            <h1>Agende sua Visita</h1>
-            <p>Reserve seu horário e venha conhecer nossa história</p>
-        </div>
+      <div
+        class="hero-background"
+        style="
+          background-image: url('https://images.pexels.com/photos/1181533/pexels-photo-1181533.jpeg?auto=compress&cs=tinysrgb&w=1200');
+        "
+      ></div>
+      <div class="hero-content">
+        <h1>Agende sua Visita</h1>
+        <p>Reserve seu horário e venha conhecer nossa história</p>
+      </div>
     </section>
 
     <!-- Conteúdo Principal -->
     <main class="page-content">
-        <div class="container">
-            <!-- Informações de Visitação -->
-            <section class="visit-info fade-in">
-                <div class="section-header">
-                    <h2>Informações de Visitação</h2>
+      <div class="container">
+        <!-- Informações de Visitação -->
+        <section class="visit-info fade-in">
+          <div class="section-header">
+            <h2>Informações de Visitação</h2>
+          </div>
+          <div class="info-grid">
+            <div class="info-card">
+              <div class="info-icon">
+                <svg
+                  width="40"
+                  height="40"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <circle cx="12" cy="12" r="10" />
+                  <polyline points="12,6 12,12 16,14" />
+                </svg>
+              </div>
+              <h3>Horários</h3>
+              <p><strong>Terça a Domingo:</strong> 9h às 17h</p>
+              <p><strong>Fechado:</strong> Segundas-feiras</p>
+              <p><strong>Última entrada:</strong> 16h30</p>
+            </div>
+            <div class="info-card">
+              <div class="info-icon">
+                <svg
+                  width="40"
+                  height="40"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                  <circle cx="9" cy="7" r="4" />
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                </svg>
+              </div>
+              <h3>Grupos</h3>
+              <p><strong>Individual:</strong> Até 5 pessoas</p>
+              <p><strong>Grupos:</strong> 6 a 30 pessoas</p>
+              <p><strong>Escolas:</strong> Agendamento obrigatório</p>
+            </div>
+            <div class="info-card">
+              <div class="info-icon">
+                <svg
+                  width="40"
+                  height="40"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                  <line x1="8" y1="21" x2="16" y2="21" />
+                  <line x1="12" y1="17" x2="12" y2="21" />
+                </svg>
+              </div>
+              <h3>Recursos</h3>
+              <p><strong>Visitas guiadas</strong> disponíveis</p>
+              <p><strong>Material educativo</strong> para grupos</p>
+              <p><strong>Acessibilidade</strong> completa</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Formulário de Agendamento -->
+        <section class="booking-section fade-in">
+          <div class="section-header">
+            <h2>Faça seu Agendamento</h2>
+            <p>Preencha o formulário abaixo para garantir sua visita</p>
+          </div>
+
+          <div class="booking-container">
+            <form id="bookingForm" class="booking-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Nome Completo *</label>
+                  <input type="text" id="name" name="name" required />
+                  <span class="error-message"></span>
                 </div>
-                <div class="info-grid">
-                    <div class="info-card">
-                        <div class="info-icon">
-                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <circle cx="12" cy="12" r="10"/>
-                                <polyline points="12,6 12,12 16,14"/>
-                            </svg>
-                        </div>
-                        <h3>Horários</h3>
-                        <p><strong>Terça a Domingo:</strong> 9h às 17h</p>
-                        <p><strong>Fechado:</strong> Segundas-feiras</p>
-                        <p><strong>Última entrada:</strong> 16h30</p>
-                    </div>
-                    <div class="info-card">
-                        <div class="info-icon">
-                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-                                <circle cx="9" cy="7" r="4"/>
-                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-                                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-                            </svg>
-                        </div>
-                        <h3>Grupos</h3>
-                        <p><strong>Individual:</strong> Até 5 pessoas</p>
-                        <p><strong>Grupos:</strong> 6 a 30 pessoas</p>
-                        <p><strong>Escolas:</strong> Agendamento obrigatório</p>
-                    </div>
-                    <div class="info-card">
-                        <div class="info-icon">
-                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
-                                <line x1="8" y1="21" x2="16" y2="21"/>
-                                <line x1="12" y1="17" x2="12" y2="21"/>
-                            </svg>
-                        </div>
-                        <h3>Recursos</h3>
-                        <p><strong>Visitas guiadas</strong> disponíveis</p>
-                        <p><strong>Material educativo</strong> para grupos</p>
-                        <p><strong>Acessibilidade</strong> completa</p>
-                    </div>
+                <div class="form-group">
+                  <label for="email">E-mail *</label>
+                  <input type="email" id="email" name="email" required />
+                  <span class="error-message"></span>
                 </div>
-            </section>
+              </div>
 
-            <!-- Formulário de Agendamento -->
-            <section class="booking-section fade-in">
-                <div class="section-header">
-                    <h2>Faça seu Agendamento</h2>
-                    <p>Preencha o formulário abaixo para garantir sua visita</p>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="phone">Telefone</label>
+                  <input type="tel" id="phone" name="phone" />
+                  <span class="error-message"></span>
                 </div>
-                
-                <div class="booking-container">
-                    <form id="bookingForm" class="booking-form">
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="name">Nome Completo *</label>
-                                <input type="text" id="name" name="name" required>
-                                <span class="error-message"></span>
-                            </div>
-                            <div class="form-group">
-                                <label for="email">E-mail *</label>
-                                <input type="email" id="email" name="email" required>
-                                <span class="error-message"></span>
-                            </div>
-                        </div>
-
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="phone">Telefone</label>
-                                <input type="tel" id="phone" name="phone">
-                                <span class="error-message"></span>
-                            </div>
-                            <div class="form-group">
-                                <label for="visitors">Número de Visitantes *</label>
-                                <select id="visitors" name="visitors" required>
-                                    <option value="">Selecione</option>
-                                    <option value="1">1 pessoa</option>
-                                    <option value="2">2 pessoas</option>
-                                    <option value="3">3 pessoas</option>
-                                    <option value="4">4 pessoas</option>
-                                    <option value="5">5 pessoas</option>
-                                    <option value="6-10">6 a 10 pessoas</option>
-                                    <option value="11-20">11 a 20 pessoas</option>
-                                    <option value="21-30">21 a 30 pessoas</option>
-                                    <option value="30+">Mais de 30 pessoas</option>
-                                </select>
-                                <span class="error-message"></span>
-                            </div>
-                        </div>
-
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="date">Data da Visita *</label>
-                                <input type="date" id="date" name="date" required>
-                                <span class="error-message"></span>
-                            </div>
-                            <div class="form-group">
-                                <label for="time">Horário Preferido *</label>
-                                <select id="time" name="time" required>
-                                    <option value="">Selecione</option>
-                                    <option value="09:00">09:00</option>
-                                    <option value="10:00">10:00</option>
-                                    <option value="11:00">11:00</option>
-                                    <option value="14:00">14:00</option>
-                                    <option value="15:00">15:00</option>
-                                    <option value="16:00">16:00</option>
-                                </select>
-                                <span class="error-message"></span>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="visit-type">Tipo de Visita</label>
-                            <div class="radio-group">
-                                <label class="radio-label">
-                                    <input type="radio" name="visit-type" value="livre" checked>
-                                    <span class="radio-custom"></span>
-                                    Visita Livre
-                                </label>
-                                <label class="radio-label">
-                                    <input type="radio" name="visit-type" value="guiada">
-                                    <span class="radio-custom"></span>
-                                    Visita Guiada
-                                </label>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="group-type">Tipo de Grupo</label>
-                            <select id="group-type" name="group-type">
-                                <option value="">Selecione (opcional)</option>
-                                <option value="familia">Família</option>
-                                <option value="escola">Escola</option>
-                                <option value="universidade">Universidade</option>
-                                <option value="empresa">Empresa</option>
-                                <option value="terceira-idade">Terceira Idade</option>
-                                <option value="turismo">Turismo</option>
-                                <option value="outro">Outro</option>
-                            </select>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="special-needs">Necessidades Especiais</label>
-                            <textarea id="special-needs" name="special-needs" rows="3" placeholder="Informe se há visitantes com necessidades especiais, cadeirantes, ou outras observações importantes..."></textarea>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="message">Mensagem Adicional</label>
-                            <textarea id="message" name="message" rows="4" placeholder="Conte-nos mais sobre sua visita, interesses específicos, ou outras informações relevantes..."></textarea>
-                        </div>
-
-                        <div class="form-group checkbox-group">
-                            <label class="checkbox-label">
-                                <input type="checkbox" id="terms" name="terms" required>
-                                <span class="checkbox-custom"></span>
-                                Concordo com os <a href="#" class="link">termos de visitação</a> e autorizo o uso de imagens para fins educativos *
-                            </label>
-                            <span class="error-message"></span>
-                        </div>
-
-                        <div class="form-group checkbox-group">
-                            <label class="checkbox-label">
-                                <input type="checkbox" id="newsletter" name="newsletter">
-                                <span class="checkbox-custom"></span>
-                                Desejo receber informações sobre exposições e eventos do museu
-                            </label>
-                        </div>
-
-                        <div class="form-actions">
-                            <button type="submit" class="btn btn-primary">
-                                <span class="btn-text">Agendar Visita</span>
-                                <span class="btn-loading" style="display: none;">Enviando...</span>
-                            </button>
-                            <button type="reset" class="btn btn-secondary">Limpar Formulário</button>
-                        </div>
-                    </form>
-
-                    <!-- Informações Adicionais -->
-                    <div class="booking-info">
-                        <div class="info-box">
-                            <h3>Importante</h3>
-                            <ul>
-                                <li>O agendamento é <strong>gratuito</strong></li>
-                                <li>Confirmaremos por e-mail em até 24h</li>
-                                <li>Chegue 15 minutos antes do horário</li>
-                                <li>Cancelamentos com 24h de antecedência</li>
-                                <li>Grupos acima de 30 pessoas: contato direto</li>
-                            </ul>
-                        </div>
-
-                        <div class="info-box">
-                            <h3>Dicas para sua Visita</h3>
-                            <ul>
-                                <li>Use calçados confortáveis</li>
-                                <li>Fotografias permitidas sem flash</li>
-                                <li>Duração média: 1h30min</li>
-                                <li>Material educativo disponível</li>
-                                <li>Loja de souvenirs no local</li>
-                            </ul>
-                        </div>
-                    </div>
+                <div class="form-group">
+                  <label for="visitors">Número de Visitantes *</label>
+                  <select id="visitors" name="visitors" required>
+                    <option value="">Selecione</option>
+                    <option value="1">1 pessoa</option>
+                    <option value="2">2 pessoas</option>
+                    <option value="3">3 pessoas</option>
+                    <option value="4">4 pessoas</option>
+                    <option value="5">5 pessoas</option>
+                    <option value="6-10">6 a 10 pessoas</option>
+                    <option value="11-20">11 a 20 pessoas</option>
+                    <option value="21-30">21 a 30 pessoas</option>
+                    <option value="30+">Mais de 30 pessoas</option>
+                  </select>
+                  <span class="error-message"></span>
                 </div>
-            </section>
-        </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="date">Data da Visita *</label>
+                  <input type="date" id="date" name="date" required />
+                  <span class="error-message"></span>
+                </div>
+                <div class="form-group">
+                  <label for="time">Horário Preferido *</label>
+                  <select id="time" name="time" required>
+                    <option value="">Selecione</option>
+                    <option value="09:00">09:00</option>
+                    <option value="10:00">10:00</option>
+                    <option value="11:00">11:00</option>
+                    <option value="14:00">14:00</option>
+                    <option value="15:00">15:00</option>
+                    <option value="16:00">16:00</option>
+                  </select>
+                  <span class="error-message"></span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="visit-type">Tipo de Visita</label>
+                <div class="radio-group">
+                  <label class="radio-label">
+                    <input
+                      type="radio"
+                      name="visit-type"
+                      value="livre"
+                      checked
+                    />
+                    <span class="radio-custom"></span>
+                    Visita Livre
+                  </label>
+                  <label class="radio-label">
+                    <input type="radio" name="visit-type" value="guiada" />
+                    <span class="radio-custom"></span>
+                    Visita Guiada
+                  </label>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="group-type">Tipo de Grupo</label>
+                <select id="group-type" name="group-type">
+                  <option value="">Selecione (opcional)</option>
+                  <option value="familia">Família</option>
+                  <option value="escola">Escola</option>
+                  <option value="universidade">Universidade</option>
+                  <option value="empresa">Empresa</option>
+                  <option value="terceira-idade">Terceira Idade</option>
+                  <option value="turismo">Turismo</option>
+                  <option value="outro">Outro</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="special-needs">Necessidades Especiais</label>
+                <textarea
+                  id="special-needs"
+                  name="special-needs"
+                  rows="3"
+                  placeholder="Informe se há visitantes com necessidades especiais, cadeirantes, ou outras observações importantes..."
+                ></textarea>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Mensagem Adicional</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  placeholder="Conte-nos mais sobre sua visita, interesses específicos, ou outras informações relevantes..."
+                ></textarea>
+              </div>
+
+              <div class="form-group checkbox-group">
+                <label class="checkbox-label">
+                  <input type="checkbox" id="terms" name="terms" required />
+                  <span class="checkbox-custom"></span>
+                  Concordo com os
+                  <a href="#" class="link">termos de visitação</a> e autorizo o
+                  uso de imagens para fins educativos *
+                </label>
+                <span class="error-message"></span>
+              </div>
+
+              <div class="form-group checkbox-group">
+                <label class="checkbox-label">
+                  <input type="checkbox" id="newsletter" name="newsletter" />
+                  <span class="checkbox-custom"></span>
+                  Desejo receber informações sobre exposições e eventos do museu
+                </label>
+              </div>
+
+              <div class="form-actions">
+                <button type="submit" class="btn btn-primary">
+                  <span class="btn-text">Agendar Visita</span>
+                  <span class="btn-loading" style="display: none"
+                    >Enviando...</span
+                  >
+                </button>
+                <button type="reset" class="btn btn-secondary">
+                  Limpar Formulário
+                </button>
+              </div>
+            </form>
+
+            <!-- Informações Adicionais -->
+            <div class="booking-info">
+              <div class="info-box">
+                <h3>Importante</h3>
+                <ul>
+                  <li>O agendamento é <strong>gratuito</strong></li>
+                  <li>Confirmaremos por e-mail em até 24h</li>
+                  <li>Chegue 15 minutos antes do horário</li>
+                  <li>Cancelamentos com 24h de antecedência</li>
+                  <li>Grupos acima de 30 pessoas: contato direto</li>
+                </ul>
+              </div>
+
+              <div class="info-box">
+                <h3>Dicas para sua Visita</h3>
+                <ul>
+                  <li>Use calçados confortáveis</li>
+                  <li>Fotografias permitidas sem flash</li>
+                  <li>Duração média: 1h30min</li>
+                  <li>Material educativo disponível</li>
+                  <li>Loja de souvenirs no local</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
 
     <!-- Modal de Confirmação -->
     <div id="confirmationModal" class="modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <div class="success-icon">
-                    <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <circle cx="12" cy="12" r="10"/>
-                        <polyline points="16,8 12,12 8,16"/>
-                    </svg>
-                </div>
-                <h2>Agendamento Enviado!</h2>
-            </div>
-            <div class="modal-body">
-                <p>Seu agendamento foi enviado com sucesso. Em breve entraremos em contato para confirmar sua visita.</p>
-                <p><strong>Dados do agendamento:</strong></p>
-                <div id="bookingDetails"></div>
-            </div>
-            <div class="modal-footer">
-                <button class="btn btn-primary" onclick="closeModal('confirmationModal')">Fechar</button>
-            </div>
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="success-icon">
+            <svg
+              width="60"
+              height="60"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <circle cx="12" cy="12" r="10" />
+              <polyline points="16,8 12,12 8,16" />
+            </svg>
+          </div>
+          <h2>Agendamento Enviado!</h2>
         </div>
+        <div class="modal-body">
+          <p>
+            Seu agendamento foi enviado com sucesso. Em breve entraremos em
+            contato para confirmar sua visita.
+          </p>
+          <p><strong>Dados do agendamento:</strong></p>
+          <div id="bookingDetails"></div>
+        </div>
+        <div class="modal-footer">
+          <button
+            class="btn btn-primary"
+            onclick="closeModal('confirmationModal')"
+          >
+            Fechar
+          </button>
+        </div>
+      </div>
     </div>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Museu Municipal de Jaú</h3>
-                    <p>Preservando a história e cultura da nossa cidade para as futuras gerações.</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Navegação</h4>
-                    <ul>
-                        <li><a href="/Aula-Guto---Web-Site-Museu/index.html">Início</a></li>
-                        <li><a href="sobre.html">Sobre</a></li>
-                        <li><a href="obras.html">Obras</a></li>
-                        <li><a href="agendamento.html">Agendamento</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Contato</h4>
-                    <p>Rua XV de Novembro, 123<br>Centro - Jaú/SP</p>
-                    <p>Tel: (14) 3622-1234</p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Museu Municipal de Jaú. Todos os direitos reservados.</p>
-            </div>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Museu Municipal de Jaú</h3>
+            <p>
+              Preservando a história e cultura da nossa cidade para as futuras
+              gerações.
+            </p>
+          </div>
+          <div class="footer-section">
+            <h4>Navegação</h4>
+            <ul>
+              <li>
+                <a href="/Aula-Guto---Web-Site-Museu/index.html">Início</a>
+              </li>
+              <li><a href="sobre.html">Sobre</a></li>
+              <li><a href="obras.html">Obras</a></li>
+              <li><a href="agendamento.html">Agendamento</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Contato</h4>
+            <p>Rua XV de Novembro, 123<br />Centro - Jaú/SP</p>
+            <p>Tel: (14) 3622-1234</p>
+          </div>
         </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; 2024 Museu Municipal de Jaú. Todos os direitos reservados.
+          </p>
+        </div>
+      </div>
     </footer>
 
-    <script src="/js/script.js"></script>
-    <script src="/js/booking.js"></script>
-</body>
+    <script src="/Aula-Guto---Web-Site-Museu/js/script.js"></script>
+    <script src="/Aula-Guto---Web-Site-Museu/js/booking.js"></script>
+  </body>
 </html>
