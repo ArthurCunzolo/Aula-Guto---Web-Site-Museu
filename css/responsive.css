@@ -1,0 +1,59 @@
+
+/* responsive.css - added by ChatGPT to improve mobile responsiveness */
+
+/* Box sizing and layout helpers */
+*, *::before, *::after { box-sizing: border-box; }
+
+/* Make images and iframes scale */
+img, picture, video, iframe { max-width: 100%; height: auto; display: block; }
+
+/* Fluid containers */
+.container, .wrap, main, header, footer, .content { max-width: 98%; margin-left: auto; margin-right: auto; padding-left:0rem ; padding-right: 0rem; }
+
+/* Ensure body text wraps and is legible on small screens */
+body { line-height: 1.4; word-wrap: break-word; -webkit-font-smoothing: antialiased; }
+
+/* Make buttons and inputs responsive */
+button, input[type="text"], input[type="email"], input[type="search"], textarea, select {
+  min-width: 0;
+  width: auto;
+  max-width: 100%;
+}
+
+/* Common utility to avoid fixed-width overflow */
+.responsive-fixed { max-width: 100% !important; width: auto !important; }
+
+/* Navigation adjustments */
+nav ul { display: flex; flex-wrap: wrap; gap: 0.5rem; padding-left: 0; margin: 0; list-style: none; }
+nav li { display: inline-block; }
+
+/* Tables - make scrollable on small screens */
+.table-responsive { overflow-x: auto; }
+
+/* Media queries for breakpoints */
+@media (max-width: 1024px) {
+  .two-col { display: flex; flex-wrap: wrap; gap: 1rem; }
+  .two-col > * { flex: 1 1 48%; min-width: 260px; }
+}
+
+@media (max-width: 768px) {
+  html { font-size: 15px; }
+  .two-col > * { flex-basis: 100%; }
+  header .logo, .site-logo { max-width: 180px; }
+  .hide-on-mobile { display: none !important; }
+  .stack { display: block; }
+  nav ul { flex-direction: column; gap: 0.25rem; }
+}
+
+/* Small phones */
+@media (max-width: 420px) {
+  html { font-size: 14px; }
+  .container { padding-left: 0.75rem; padding-right: 0.75rem; }
+  .big-text { font-size: 1rem; }
+}
+
+/* Accessibility: larger tap targets */
+a, button { touch-action: manipulation; padding: 0.5rem 0.75rem; }
+
+/* Prevent horizontal scroll caused by very long words/urls */
+pre, code { white-space: pre-wrap; word-break: break-word; }

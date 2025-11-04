@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Museu Municipal de Jaú - História Viva</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Tela de Carregamento -->
+    <div id="loading-screen">
+        <div class="loading-content">
+            <div class="museum-icon">
+                <svg width="80" height="80" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="10" y="30" width="80" height="50" rx="2" fill="#8B4513" opacity="0.8"/>
+                    <rect x="15" y="35" width="15" height="30" fill="#D4B896"/>
+                    <rect x="35" y="35" width="15" height="30" fill="#D4B896"/>
+                    <rect x="55" y="35" width="15" height="30" fill="#D4B896"/>
+                    <rect x="75" y="35" width="10" height="30" fill="#D4B896"/>
+                    <rect x="5" y="25" width="90" height="8" rx="4" fill="#8B4513"/>
+                    <rect x="20" y="75" width="60" height="10" rx="2" fill="#8B4513"/>
+                </svg>
+            </div>
+            <h2>Museu Municipal de Jaú</h2>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+            <p>Carregando história...</p>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span>Museu de Jaú</span>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link active">Início</a>
+                <a href="sobre.html" class="nav-link">Sobre</a>
+                <a href="obras.html" class="nav-link">Obras</a>
+                <a href="agendamento.html" class="nav-link">Agendamento</a>
+                <a href="contato.html" class="nav-link">Contato</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Conteúdo Principal -->
+    <main id="main-content" style="opacity: 0;">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-background"></div>
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="title-main">Museu Municipal</span>
+                    <span class="title-sub">da Cidade de Jaú</span>
+                </h1>
+                <p class="hero-subtitle">Onde o passado encontra o presente, preservando a rica história de nossa cidade</p>
+                <div class="hero-buttons">
+                    <a href="obras.html" class="btn btn-primary">Explore Nossas Obras</a>
+                    <a href="agendamento.html" class="btn btn-secondary">Agende sua Visita</a>
+                </div>
+            </div>
+            <div class="hero-scroll">
+                <span>Role para descobrir</span>
+                <div class="scroll-arrow"></div>
+            </div>
+        </section>
+
+        <!-- Seção Sobre -->
+        <section class="about-preview">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Uma Jornada pela História</h2>
+                    <p>Descubra os tesouros históricos que contam a fascinante história de Jaú</p>
+                </div>
+                <div class="about-grid">
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2L2 7v10c0 5.55 3.84 10 9 10s9-4.45 9-10V7l-10-5z"/>
+                            </svg>
+                        </div>
+                        <h3>Patrimônio Histórico</h3>
+                        <p>Mais de 500 peças históricas que narram a evolução de nossa cidade desde sua fundação.</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                                <line x1="16" y1="2" x2="16" y2="6"/>
+                                <line x1="8" y1="2" x2="8" y2="6"/>
+                                <line x1="3" y1="10" x2="21" y2="10"/>
+                            </svg>
+                        </div>
+                        <h3>Exposições Permanentes</h3>
+                        <p>Coleções cuidadosamente curadas que destacam os momentos mais importantes da história local.</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                <circle cx="9" cy="7" r="4"/>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                            </svg>
+                        </div>
+                        <h3>Experiência Educativa</h3>
+                        <p>Programas educacionais que conectam visitantes de todas as idades com nossa rica herança cultural.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Destaque -->
+        <section class="highlights">
+            <div class="container">
+                <div class="highlights-content">
+                    <div class="highlights-text">
+                        <h2>Preservando Nossa Memória</h2>
+                        <p>O Museu Municipal de Jaú é mais que um espaço de exposição - é um portal para o passado, um guardião das memórias que moldaram nossa identidade. Cada peça em nossa coleção conta uma história única sobre os pioneiros, as tradições e os momentos decisivos que fizeram de Jaú a cidade próspera que conhecemos hoje.</p>
+                        <p>Através de tecnologia moderna e curadoria especializada, oferecemos uma experiência imersiva que conecta gerações e inspira o futuro.</p>
+                        <a href="sobre.html" class="btn btn-outline">Conheça Nossa História</a>
+                    </div>
+                    <div class="highlights-image">
+                        <img src="/img/editada.jpeg" alt="Interior do museu" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção CTA -->
+        <section class="cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Faça Parte da História</h2>
+                    <p>Visite-nos e descubra os segredos e tesouros que fazem de Jaú uma cidade única</p>
+                    <div class="cta-buttons">
+                        <a href="agendamento.html" class="btn btn-primary">Agendar Visita</a>
+                        <a href="contato.html" class="btn btn-secondary">Entre em Contato</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Museu Municipal de Jaú</h3>
+                    <p>Preservando a história e cultura da nossa cidade para as futuras gerações.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Navegação</h4>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="obras.html">Obras</a></li>
+                        <li><a href="agendamento.html">Agendamento</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <p>Rua XV de Novembro, 123<br>Centro - Jaú/SP</p>
+                    <p>Tel: (14) 3622-1234</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Museu Municipal de Jaú. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
