@@ -865,14 +865,21 @@ a {
     max-width: 800px;
     max-height: 90vh;
     overflow-y: auto;
-    position: relative;
+    position: center;
     margin: 20px;
     animation: slideUp 0.3s ease;
 }
 
 .modal-content img {
     width: 100%;
-    height: 300px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 16px 16px 0 0;
+}
+
+.modal-content video {
+    width: 100%;
+    height: 500px;
     object-fit: cover;
     border-radius: 16px 16px 0 0;
 }
