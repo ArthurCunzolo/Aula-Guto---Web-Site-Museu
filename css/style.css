@@ -245,6 +245,7 @@ a {
 }
 
 .hero-background {
+    max-width: 100%;
     position: absolute;
     top: 0;
     left: 0;
@@ -340,6 +341,7 @@ a {
 
 /* Page Hero */
 .page-hero {
+     max-width: 100%;
     background-size: cover;
     position: relative;
     height: 60vh;
@@ -350,12 +352,14 @@ a {
 }
 
 .page-hero .hero-background {
+     max-width: 100%;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
 
 .page-hero .hero-background::before {
+     max-width: 100%;
     background-size: cover;
     content: '';
     position: absolute;
@@ -367,6 +371,7 @@ a {
 }
 
 .page-hero .hero-content {
+    background-size: cover;
     position: relative;
     z-index: 1;
 }
