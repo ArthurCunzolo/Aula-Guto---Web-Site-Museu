@@ -340,6 +340,7 @@ a {
 
 /* Page Hero */
 .page-hero {
+    background-size: cover;
     position: relative;
     height: 60vh;
     display: flex;
@@ -355,6 +356,7 @@ a {
 }
 
 .page-hero .hero-background::before {
+    background-size: cover;
     content: '';
     position: absolute;
     top: 0;
