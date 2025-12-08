@@ -346,3 +346,51 @@ function debounce(func, wait, immediate) {
         if (callNow) func.apply(context, args);
     };
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    const video = document.getElementById('meuVideo');
+    const soundButton = document.getElementById('soundButton');
+
+    // 1. Lógica para o autoplay quando o vídeo está em foco (viewport)
+    const observerOptions = {
+        root: null, // Observa em relação ao viewport
+        rootMargin: '0px',
+        threshold: 0.5 // Dispara quando 50% do vídeo está visível
+    };
+
+    const observerCallback = (entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Tenta reproduzir o vídeo. Autoplay é permitido se estiver silenciado.
+                video.play().catch(error => {
+                    console.log("A reprodução automática falhou:", error);
+                });
+            } else {
+                // Pausa o vídeo quando sai do foco
+                video.pause();
+            }
+        });
+    };
+
+    const videoObserver = new IntersectionObserver(observerCallback, observerOptions);
+    videoObserver.observe(video);
+
+    // 2. Lógica para o botão de som personalizado
+    soundButton.addEventListener('click', () => {
+        // Alterna o estado de mudo
+        video.muted = !video.muted;
+
+        // Atualiza o ícone do botão com base no estado do som
+        if (video.muted) {
+            soundButton.textContent = '🔇';
+        } else {
+            soundButton.textContent = '🔊';
+        }
+    });
+
+    // 3. Garante que o ícone inicial do botão corresponda ao estado do vídeo (silenciado por padrão no HTML)
+    if (video.muted) {
+        soundButton.textContent = '🔇';
+    }
+});
+
