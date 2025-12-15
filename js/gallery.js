@@ -152,9 +152,9 @@ document.addEventListener('DOMContentLoaded', function() {
         let nextModalNumber;
         
         if (direction === 'next') {
-            nextModalNumber = modalNumber >= totalModals ? 1 : modalNumber + 1;
+            nextModalNumber = modalNumber >= totalModals ? 4 : modalNumber + 1;
         } else {
-            nextModalNumber = modalNumber <= 1 ? totalModals : modalNumber - 1;
+            nextModalNumber = modalNumber <= 4 ? totalModals : modalNumber - 1;
         }
         
         const nextModal = document.getElementById(`modal${nextModalNumber}`);
@@ -167,35 +167,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    // Adiciona botões de navegação aos modais
-    function addModalNavigation() {
-        const modals = document.querySelectorAll('.modal');
-        
-        modals.forEach((modal, index) => {
-            const modalContent = modal.querySelector('.modal-content');
-            const totalModals = modals.length;
-            
-            if (totalModals > 1) {
-                const navContainer = document.createElement('div');
-                navContainer.className = 'modal-navigation';
-                navContainer.innerHTML = `
-                    <button class="modal-nav-btn prev-btn" onclick="navigateModal('prev')" aria-label="Anterior">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="15,18 9,12 15,6"></polyline>
-                        </svg>
-                    </button>
-                    <span class="modal-counter">${index + 1} / ${totalModals}</span>
-                    <button class="modal-nav-btn next-btn" onclick="navigateModal('next')" aria-label="Próximo">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="9,18 15,12 9,6"></polyline>
-                        </svg>
-                    </button>
-                `;
-                
-                modalContent.appendChild(navContainer);
-            }
-        });
-    }
 
     // Inicializa navegação dos modais
     addModalNavigation();

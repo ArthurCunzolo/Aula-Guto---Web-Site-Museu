@@ -263,12 +263,20 @@ document.addEventListener('DOMContentLoaded', function() {
 // Função global para abrir modais
 function openModal(modalId) {
     const modal = document.getElementById(modalId);
-    if (modal) {
-        modal.style.display = 'flex';
-        modal.classList.add('show');
-        document.body.style.overflow = 'hidden'; // Previne scroll da página
-    }
+    if (!modal) return;
+
+    modal.style.display = 'flex';
+
+    // força reflow (IMPORTANTE)
+    modal.offsetHeight;
+
+    modal.classList.add('show');
+    document.body.style.overflow = 'hidden';
 }
+
+
+
+
 
 // Função global para fechar modais
 function closeModal(modalId) {
@@ -279,6 +287,7 @@ function closeModal(modalId) {
         document.body.style.overflow = 'auto'; // Restaura scroll da página
     }
 }
+
 
 // Event listeners para fechar modais
 document.addEventListener('click', function(event) {

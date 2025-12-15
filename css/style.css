@@ -927,17 +927,18 @@ a {
 }
 
 .modal-info h2 {
-  color: #2c1810;
+  color: #d3deeb;
   margin-bottom: 1rem;
 }
 
 .modal-info p {
   margin-bottom: 1rem;
   line-height: 1.6;
+  color: #e4ccc3;
 }
 
 .modal-info strong {
-  color: #8d6e63;
+  color: #aa897d;
 }
 
 .close {
@@ -1717,3 +1718,39 @@ a {
   align-items: center;
 border-right: 2px;
 }
+
+.slider {
+  position:relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slides {
+  display:flex;
+  transition: transform 0.4s ease;
+  width: 100%;
+}
+
+.slides img {
+  width: 100%;
+  min-width: 100%;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  border: none;
+  font-size: 30px;
+  padding: 5px 12px;
+  cursor: pointer;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+

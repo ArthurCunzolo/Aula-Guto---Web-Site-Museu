@@ -78,8 +78,8 @@
             <div class="gallery-item" data-category="fotografias">
               <div class="item-image">
                 <img
-                  src="/Aula-Guto---Web-Site-Museu/img/Renuiao.jpeg"
-                  alt="Estação Ferroviária de Jaú - 1920"
+                  src="/Aula-Guto---Web-Site-Museu/img/pouso.png"
+                  alt="Pouso Hidroavião"
                 />
                 <div class="item-overlay">
                   <button class="view-btn" onclick="openModal('modal1')">
@@ -88,8 +88,8 @@
                 </div>
               </div>
               <div class="item-info">
-                <h3>Estação Ferroviária de Jaú</h3>
-                <p class="item-date">Circa 1920</p>
+                <h3>Pouso Hidroavião</h3>
+                <br/>
                 <p class="item-category">Fotografia</p>
               </div>
             </div>
@@ -99,7 +99,7 @@
               <div class="item-image">
                 <img
                   src="/Aula-Guto---Web-Site-Museu/img/Aviador.jpeg"
-                  alt="Máquina de Café Antiga"
+                  alt="João Ribeiro de Barros Busto"
                 />
                 <div class="item-overlay">
                   <button class="view-btn" onclick="openModal('modal2')">
@@ -108,18 +108,18 @@
                 </div>
               </div>
               <div class="item-info">
-                <h3>Aviador</h3>
-                <p class="item-date">1890</p>
+                <h3>João Ribeiro de Barros</h3>
+                <Br/>
                 <p class="item-category">Objeto</p>
               </div>
             </div>
 
             <!-- Documentos -->
             <div class="gallery-item" data-category="documentos">
-              <div class="item-image">
+               <div class="item-image">
                 <img
-                  src="/Aula-Guto---Web-Site-Museu/img/pouso.png"
-                  alt="Praça Central - 1950"
+                  src="/Aula-Guto---Web-Site-Museu/Imagens_Digitalizadas/IMG-20251212-WA0822.jpg"
+                  alt="Pintura Local"
                 />
                 <div class="item-overlay">
                   <button class="view-btn" onclick="openModal('modal3')">
@@ -128,8 +128,8 @@
                 </div>
               </div>
               <div class="item-info">
-                <h3>Pouso</h3>
-                <p class="item-date">1950</p>
+                <h3>Cerimonias do Pouso</h3>
+                <br/>
                 <p class="item-category">Fotografia</p>
               </div>
             </div>
@@ -138,7 +138,7 @@
             <div class="gallery-item" data-category="arte">
               <div class="item-image">
                 <img
-                  src="/Aula-Guto---Web-Site-Museu/img/Quadrinho2.jpeg"
+                  src="/Aula-Guto---Web-Site-Museu/imagens_pdf_travessia/1.jpg"
                   alt="Pintura Local"
                 />
                 <div class="item-overlay">
@@ -148,9 +148,9 @@
                 </div>
               </div>
               <div class="item-info">
-                <h3>Quadrinhos</h3>
-                <p class="item-date">1925</p>
-                <p class="item-category">Arte</p>
+                <h3>Livro João Ribeiro de Barros</h3>
+                <br/>
+                <p class="item-category">Fotografia</p>
               </div>
             </div>
 
@@ -161,40 +161,157 @@
 
     <!-- Modais -->
     <div id="modal1" class="modal">
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <video autoplay loop muted playsinline poster="imagem-de-capa.jpg">
-          <source src="/Aula-Guto---Web-Site-Museu/img/escada_video1.mp4" type="video/mp4">
-          <source src="seu-video.webm" type="video/webm">
-          Seu navegador não suporta a tag de vídeo.
-      </video>
-        <div class="modal-info">
-          <h2>Estação Ferroviária de Jaú</h2>
-          <p><strong>Data:</strong> Circa 1920</p>
+  <div class="modal-content">
+    <span class="close">&times;</span>
+
+    <div class="slider">
+      <div class="slides">
+        <img src="/Aula-Guto---Web-Site-Museu/img/pouso.png" alt="Busto João Ribeiro de Barros">
+        <img src="/Aula-Guto---Web-Site-Museu/Imagens_Digitalizadas/IMG-20251212-WA0825.jpg" alt="Quadro joão ribeiro de Barros">
+        <img src="/Aula-Guto---Web-Site-Museu/Imagens_Digitalizadas/IMG-20251212-WA0785.jpg" alt="Foto Branca e Preta Do Aviador">
+      </div>
+
+      <button class="prev">‹</button>
+      <button class="next">›</button>
+    </div>
+
+  </div>
+  <div class="modal-info">
+          <h2>Pouso do Hidroviaõ</h2>
+          <p><strong>Data:</strong> 1927</p>
           <p><strong>Categoria:</strong> Fotografia</p>
           <p>
-            <strong>Descrição:</strong> Esta fotografia histórica captura a
-            estação ferroviária de Jaú em seus primeiros anos de funcionamento.
-            A ferrovia foi fundamental para o desenvolvimento econômico da
-            cidade, especialmente para o transporte de café. A imagem mostra a
-            arquitetura típica das estações da época e a movimentação
-            característica dos tempos áureos do café.
+            <strong>Descrição:</strong> Imagens do Hidroavião utilizado para travessia pelo João ribeiro de Barros e seus companheiros
+            nessa conquista; Por fim, às 4h30 da manhã no dia 28 de abril de 1927, partindo de Praia na ilha de Santiago (Cabo Verde), 
+            cruzou o Atlântico com seus três companheiros a bordo do Jahú, chegando às 17h00 na enseada norte de Fernando de Noronha.
           </p>
-          <p><strong>Origem:</strong> Doação da família Silva, 1985</p>
+          <p><strong>Origem:</strong> Arquivo Municipal</p>
         </div>
       </div>
     </div>
+</div>
 
-    <div id="modal2" class="modal">
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <video autoplay loop muted playsinline poster="imagem-de-capa.jpg">
-          <source src="/Aula-Guto---Web-Site-Museu/img/João_Ribeiro_de_Barros_Primeiro_Aviador_a_Cruzar_o_Oceano_Atlântico_Sem_Escalas__10-30 17_42.mp4" type="video/mp4">
-          <source src="seu-video.webm" type="video/webm">
-          Seu navegador não suporta a tag de vídeo.
-      </video>
+<div id="modal2" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+
+    <div class="slider">
+      <div class="slides">
+        <img src="/Aula-Guto---Web-Site-Museu/img/Aviador.jpeg" alt="Busto João Ribeiro de Barros">
+        <img src="/Aula-Guto---Web-Site-Museu/img/quadroaviador.jpeg" alt="Quadro joão ribeiro de Barros">
+        <img src="/Aula-Guto---Web-Site-Museu/Imagens_Digitalizadas/IMG-20251212-WA0769.jpg" alt="Foto Branca e Preta Do Aviador">
+      </div>
+
+      <button class="prev">‹</button>
+      <button class="next">›</button>
+    </div>
+
+  </div>
+  <div class="modal-info">
+          <h2>João ribeiro de Barros</h2>
+          <p><strong>Data:</strong> 1927</p>
+          <p><strong>Categoria:</strong> Fotografia</p>
+          <p>
+            <strong>Descrição:</strong> João Ribeiro de Barros (Jaú, 4 de abril de 1900 — Jaú, 20 de julho de 1947) foi um aviador brasileiro.
+            Com seus companheiros, foi um dos pioneiros da travessia aérea do Atlântico Sul, no dia 28 de abril de 1927, a bordo do hidroavião Jahú.
+          </p>
+          <p><strong>Origem:</strong> Arquivo Municipal</p>
+        </div>
+      </div>
+    </div>
+</div>
   
-        <div class="modal-info">
+        
+
+    <div id="modal3" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+
+    <div class="slider">
+      <div class="slides">
+        <img src="/Aula-Guto---Web-Site-Museu/Imagens_Digitalizadas/IMG-20251212-WA0822.jpg" alt="Busto João Ribeiro de Barros">
+        <img src="/Aula-Guto---Web-Site-Museu/Imagens_Digitalizadas/IMG-20251212-WA0827.jpg" alt="Quadro joão ribeiro de Barros">
+        <img src="/Aula-Guto---Web-Site-Museu/Imagens_Digitalizadas/IMG-20251212-WA0830.jpg" alt="Foto Branca e Preta Do Aviador">
+      </div>
+
+      <button class="prev">‹</button>
+      <button class="next">›</button>
+    </div>
+
+  </div>
+  <div class="modal-info">
+          <h2>Cerimonias do Pouso</h2>
+          <p><strong>Data:</strong> 1927</p>
+          <p><strong>Categoria:</strong> Fotografia</p>
+          <p>
+            <strong>Descrição:</strong> Às 4h30 da manhã no dia 28 de abril de 1927, partindo de Praia na ilha de Santiago (Cabo Verde), cruzou o Atlântico com seus três companheiros a bordo do Jahú, 
+            chegando às 17h00 na enseada norte de Fernando de Noronha.
+            O comandante Nisbet do navio italiano Angelo Tosi testemunhou a amerissagem do Jahú. 
+            Este comandante atestou que nos tanques da aeronave ainda restavam 250 litros de combustível.
+            Nesse trajeto foi estabelecido um recorde de velocidade que se manteria por alguns anos.
+          </p>
+          <p><strong>Origem:</strong> Arquivo Municipal</p>
+        </div>
+      </div>
+    </div>
+</div>
+
+    <div id="modal4" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+
+    <div class="slider">
+      <div class="slides">
+        <img src="/Aula-Guto---Web-Site-Museu/imagens_pdf_travessia/1.jpg" alt="Busto João Ribeiro de Barros">
+        <img src="/Aula-Guto---Web-Site-Museu/imagens_pdf_travessia/2.jpg" alt="Quadro joão ribeiro de Barros">
+        <img src="/Aula-Guto---Web-Site-Museu/imagens_pdf_travessia/3.jpg" alt="Foto Branca e Preta Do Aviador">
+        <img src="/Aula-Guto---Web-Site-Museu/imagens_pdf_travessia/4.jpg" alt="Foto Branca e Preta Do Aviador">
+        <img src="/Aula-Guto---Web-Site-Museu/imagens_pdf_travessia/5.jpg" alt="Foto Branca e Preta Do Aviador">
+        <img src="/Aula-Guto---Web-Site-Museu/imagens_pdf_travessia/6.jpg" alt="Foto Branca e Preta Do Aviador">
+        <img src="/Aula-Guto---Web-Site-Museu/imagens_pdf_travessia/7.jpg" alt="Foto Branca e Preta Do Aviador">
+        <img src="/Aula-Guto---Web-Site-Museu/imagens_pdf_travessia/8.jpg" alt="Foto Branca e Preta Do Aviador">
+        <img src="/Aula-Guto---Web-Site-Museu/imagens_pdf_travessia/9.jpg" alt="Foto Branca e Preta Do Aviador">
+        <img src="/Aula-Guto---Web-Site-Museu/imagens_pdf_travessia/10.jpg" alt="Foto Branca e Preta Do Aviador">
+        <img src="/Aula-Guto---Web-Site-Museu/imagens_pdf_travessia/11.jpg" alt="Foto Branca e Preta Do Aviador">
+        <img src="/Aula-Guto---Web-Site-Museu/imagens_pdf_travessia/12.jpg" alt="Foto Branca e Preta Do Aviador">
+        <img src="/Aula-Guto---Web-Site-Museu/imagens_pdf_travessia/13.jpg" alt="Foto Branca e Preta Do Aviador">
+        <img src="/Aula-Guto---Web-Site-Museu/imagens_pdf_travessia/14.jpg" alt="Foto Branca e Preta Do Aviador">
+        <img src="/Aula-Guto---Web-Site-Museu/imagens_pdf_travessia/15.jpg" alt="Foto Branca e Preta Do Aviador">
+        <img src="/Aula-Guto---Web-Site-Museu/imagens_pdf_travessia/16.jpg" alt="Foto Branca e Preta Do Aviador">
+        <img src="/Aula-Guto---Web-Site-Museu/imagens_pdf_travessia/17.jpg" alt="Foto Branca e Preta Do Aviador">
+        <img src="/Aula-Guto---Web-Site-Museu/imagens_pdf_travessia/18.jpg" alt="Foto Branca e Preta Do Aviador">
+        <img src="/Aula-Guto---Web-Site-Museu/imagens_pdf_travessia/19.jpg" alt="Foto Branca e Preta Do Aviador">
+        <img src="/Aula-Guto---Web-Site-Museu/imagens_pdf_travessia/20.jpg" alt="Foto Branca e Preta Do Aviador">
+        <img src="/Aula-Guto---Web-Site-Museu/imagens_pdf_travessia/21.jpg" alt="Foto Branca e Preta Do Aviador">
+        <img src="/Aula-Guto---Web-Site-Museu/imagens_pdf_travessia/22.jpg" alt="Foto Branca e Preta Do Aviador">
+        <img src="/Aula-Guto---Web-Site-Museu/imagens_pdf_travessia/23.jpg" alt="Foto Branca e Preta Do Aviador">
+        <img src="/Aula-Guto---Web-Site-Museu/imagens_pdf_travessia/24.jpg" alt="Foto Branca e Preta Do Aviador">
+        <img src="/Aula-Guto---Web-Site-Museu/imagens_pdf_travessia/25.jpg" alt="Foto Branca e Preta Do Aviador">
+        <img src="/Aula-Guto---Web-Site-Museu/imagens_pdf_travessia/26.jpg" alt="Foto Branca e Preta Do Aviador">
+        <img src="/Aula-Guto---Web-Site-Museu/imagens_pdf_travessia/27.jpg" alt="Foto Branca e Preta Do Aviador">
+        <img src="/Aula-Guto---Web-Site-Museu/imagens_pdf_travessia/28.jpg" alt="Foto Branca e Preta Do Aviador">
+        <img src="/Aula-Guto---Web-Site-Museu/imagens_pdf_travessia/29.jpg" alt="Foto Branca e Preta Do Aviador">
+        <img src="/Aula-Guto---Web-Site-Museu/imagens_pdf_travessia/30.jpg" alt="Foto Branca e Preta Do Aviador">
+        <img src="/Aula-Guto---Web-Site-Museu/imagens_pdf_travessia/31.jpg" alt="Foto Branca e Preta Do Aviador">
+        <img src="/Aula-Guto---Web-Site-Museu/imagens_pdf_travessia/32.jpg" alt="Foto Branca e Preta Do Aviador">
+        <img src="/Aula-Guto---Web-Site-Museu/imagens_pdf_travessia/33.jpg" alt="Foto Branca e Preta Do Aviador">
+        <img src="/Aula-Guto---Web-Site-Museu/imagens_pdf_travessia/34.jpg" alt="Foto Branca e Preta Do Aviador">
+        <img src="/Aula-Guto---Web-Site-Museu/imagens_pdf_travessia/35.jpg" alt="Foto Branca e Preta Do Aviador">
+        <img src="/Aula-Guto---Web-Site-Museu/imagens_pdf_travessia/36.jpg" alt="Foto Branca e Preta Do Aviador">
+        <img src="/Aula-Guto---Web-Site-Museu/imagens_pdf_travessia/37.jpg" alt="Foto Branca e Preta Do Aviador">
+        <img src="/Aula-Guto---Web-Site-Museu/imagens_pdf_travessia/38.jpg" alt="Foto Branca e Preta Do Aviador">
+        <img src="/Aula-Guto---Web-Site-Museu/imagens_pdf_travessia/39.jpg" alt="Foto Branca e Preta Do Aviador">
+        <img src="/Aula-Guto---Web-Site-Museu/imagens_pdf_travessia/40.jpg" alt="Foto Branca e Preta Do Aviador">
+        <img src="/Aula-Guto---Web-Site-Museu/imagens_pdf_travessia/41.jpg" alt="Foto Branca e Preta Do Aviador">
+        <img src="/Aula-Guto---Web-Site-Museu/imagens_pdf_travessia/42.jpg" alt="Foto Branca e Preta Do Aviador">
+      </div>
+
+      <button class="prev">‹</button>
+      <button class="next">›</button>
+    </div>
+
+  </div>
+  <div class="modal-info">
           <h2>Praça Central</h2>
           <p><strong>Data:</strong> 1950</p>
           <p><strong>Categoria:</strong> Fotografia</p>
@@ -208,52 +325,7 @@
         </div>
       </div>
     </div>
-
-    <div id="modal3" class="modal">
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <video autoplay loop muted playsinline poster="imagem-de-capa.jpg">
-          <source src="/Aula-Guto---Web-Site-Museu/img/pouso1.mp4" type="video/mp4">
-          <source src="seu-video.webm" type="video/webm">
-          Seu navegador não suporta a tag de vídeo.
-      </video>
-        <div class="modal-info">
-          <h2>Máquina de Beneficiamento de Café</h2>
-          <p><strong>Data:</strong> 1890</p>
-          <p><strong>Categoria:</strong> Objeto</p>
-          <p>
-            <strong>Descrição:</strong> Máquina utilizada para o beneficiamento
-            de grãos de café, representando a importância da cafeicultura na
-            economia local. Este equipamento era fundamental no processo de
-            preparação dos grãos para exportação, contribuindo para a
-            prosperidade de Jaú durante o ciclo do café.
-          </p>
-          <p><strong>Origem:</strong> Fazenda Santa Rita</p>
-        </div>
-      </div>
-    </div>
-
-    <div id="modal4" class="modal">
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <img
-          src="/Aula-Guto---Web-Site-Museu/img/Quadrinho2.jpeg"
-          alt="Mobiliário Colonial"
-        />
-        <div class="modal-info">
-          <h2>Mobiliário Colonial</h2>
-          <p><strong>Data:</strong> 1850-1900</p>
-          <p><strong>Categoria:</strong> Objeto</p>
-          <p>
-            <strong>Descrição:</strong> Conjunto de móveis representativo do
-            estilo de vida das famílias abastadas de Jaú no século XIX. As peças
-            refletem a influência européia na decoração e o refinamento das
-            residências da época áurea do café.
-          </p>
-          <p><strong>Origem:</strong> Casa dos Barões do Café</p>
-        </div>
-      </div>
-    </div>
+</div>
 
     <!-- Footer -->
     <footer class="footer">
@@ -293,5 +365,54 @@
 
     <script src="/Aula-Guto---Web-Site-Museu/js/script.js"></script>
     <script src="/Aula-Guto---Web-Site-Museu/js/gallery.js"></script>
+
+<script>
+document.querySelectorAll('.slider').forEach(slider => {
+  let index = 0;
+
+  const slides = slider.querySelector('.slides');
+  const images = slider.querySelectorAll('.slides img');
+  const total = images.length;
+
+  const nextBtn = slider.querySelector('.next');
+  const prevBtn = slider.querySelector('.prev');
+
+  nextBtn.addEventListener('click', () => {
+    index++;
+
+    if (index >= total) index = 0;
+
+    slides.style.transform = `translateX(-${index * 100}%)`;
+  });
+
+  prevBtn.addEventListener('click', () => {
+    index--;
+
+    if (index < 0) index = total - 1;
+
+    slides.style.transform = `translateX(-${index * 100}%)`;
+  });
+});
+</script>
+
+<script>
+window.addEventListener('load', () => {
+  const hash = window.location.hash;
+
+  if (!hash) return;
+
+  const modalId = hash.replace('#', '');
+  const modal = document.getElementById(modalId);
+
+  if (modal) {
+    // pequeno delay para garantir que TUDO carregou
+    setTimeout(() => {
+      openModal(modalId);
+    }, 300);
+  }
+});
+</script>
+
+
   </body>
 </html>
